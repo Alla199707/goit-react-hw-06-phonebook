@@ -11,9 +11,8 @@ const initialState = [
 
 const ContactSlice = createSlice({
   name: 'contacts',
-  initialState: {
-    contacts: initialState,
-  },
+  initialState: initialState,
+
   reducers: {
     addContact: (state, action) => [...state, action.payload],
     deleteContact: (state, action) =>
