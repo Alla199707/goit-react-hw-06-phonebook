@@ -9,9 +9,9 @@ const ContactList = () => {
   const dispatch = useDispatch();
 
   const getFilterContacts = () => {
-    return contacts.filter(contact =>
-      contact.name.toLowerCase().includes(filter.toLowerCase())
-    );
+    return contacts.filter(contact => {
+      return contact.name.toLowerCase().includes(filter.toLowerCase());
+    });
   };
 
   const filterContacts = getFilterContacts();
