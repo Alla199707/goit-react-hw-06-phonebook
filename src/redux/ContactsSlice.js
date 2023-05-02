@@ -20,7 +20,7 @@ const ContactSlice = createSlice({
       state.filter(el => el.id !== action.payload),
   },
 });
-
+// console.log(ContactSlice);
 const persistConfig = {
   key: 'contacts',
   storage,
